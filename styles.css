@@ -1,0 +1,170 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b1522;
+}
+
+.heart {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  background-color: #f20044;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 90px #f20044;
+  animation: heart 0.6s linear infinite;
+}
+
+@keyframes heart{
+  0%{
+    transform: rotate(-45deg) scale(1.07); 
+  }
+  80%{
+    transform: rotate(-45deg) scale(1.0); 
+  }
+  100%{
+    transform: rotate(-45deg) scale(0.8); 
+  }
+}
+
+.heart:before {
+  content: '';
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background-color: #f20044;
+  top: -50%;
+  border-radius: 100px;
+  box-shadow: -10px -10px 90px #f20044;
+}
+
+.heart:after {
+  content: '';
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background-color: #f20044;
+  right: -50%;
+  border-radius: 100px;
+  box-shadow: 10px 10px 90px #f20044;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  font-size: 50px;
+  color: #FF0032;
+  letter-spacing: 2px;
+  border-top-style: none;
+  border-left-style: none;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  border-right-color: #F47C7C;
+  border-bottom-color: #F47C7C;
+  padding: 30px;
+}
+
+h1:hover {
+  font-size: 80px;
+  cursor: pointer;
+  border: 2px solid #E90064;
+  padding: 25px;
+  border-radius: 30px;
+  transition: calc(0.8s);
+  
+}
+
+.name {
+  font-family: 'Love Ya Like A Sister', cursive;
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  font-size: 30px;
+  color: #EDDBC0;
+  letter-spacing: 1px;
+}
+
+.name:hover {
+  color: #FF87B2;
+  transition: calc(0.7s);
+  cursor: progress;
+}
+
+.things {
+  position: absolute;
+  border: 2px solid #DBC8AC;
+  width: 150px;
+  height: 200px;
+  bottom: 50px;
+  left: 60px;
+  border-radius: 20px;
+  color: #DBC8AC;
+}
+
+.things:hover {
+  background-color: #FA9494;
+  cursor: pointer;
+  transition: calc(1s);
+}
+
+li {
+  font-family: 'Love Light', cursive;;
+  color: #FF0032;
+  font-size: 1rem;
+}
+
+ul {
+  color: #DBC8AC;
+  font-size: bold;
+}
+
+h3 {
+  rotate: calc(30deg);
+  font-size: 70px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  color: #F47C7C;
+  font-family: 'Love Light', cursive;
+  letter-spacing: 1px;
+  padding: 20px;
+}
+
+h3:hover {
+  color: #FF8C8C;
+  cursor: pointer;
+  rotate: calc(-360deg);
+  transition: calc(1s);
+  padding: 50px;
+}
+
+.creator {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 35px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #543864;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFf;
+  font-size: 16px;
+}
+
+img {
+  width: 12px;
+}
